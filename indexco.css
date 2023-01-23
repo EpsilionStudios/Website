@@ -151,6 +151,7 @@ html, body {
     border: 2px solid rgb(255, 255, 255);
   }
 
+
   .EpsilionInsider:hover {
     border: 2px solid rgb(89, 255, 0);
     background: radial-gradient(rgb(40, 107, 195) 0%, rgba(223, 239, 1, 0.411));
