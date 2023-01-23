@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
   <title>Epsilion Studios | Homepage</title>
   <link rel="icon" href="favicon.ico">
+  <script src="particles.js"></script>
+  <script src="particlesloader.js"></script>
   <link href="indexco.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
 
@@ -44,7 +46,7 @@
   <div class="topline"></div>
   <div class="newsframe"></div>
   <div class="blogframe"></div>
-  
+
   
   <p class="TopOfLineElement">
     <strong>Epsilion Studios</strong>
@@ -74,10 +76,20 @@
     <strong>Wanna help out Epsilion Studios? <br> Become an insider!</strong> <!--I cannot believe that works. its so simple tho...-->
   </p>
   
-  
+ 
+  <div id="particles-js"></div>
   <button class="DownloadButton" type="button" onclick="window.location.href='https://epsilionstudios.epsilionstudios.repl.co/download.html';";>Download</button>
   <button class="EpsilionInsider" type="button" onclick="window.location.href='https://github.com/EpsilionStudios';";>Become an insider today!</button>
   
+
+
+  <script>
+    window.onload = function() {
+      var element = document.getElementById("particles-js");
+      element.style.opacity = 1;
+      (function fade(){(element.style.opacity-=.1)<0?element.style.display="none":setTimeout(fade,120)})();
+    }
+  </script>
 
 </body>
 
